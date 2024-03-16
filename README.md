@@ -12,8 +12,10 @@ Please read the ino file commenatary carefully for instructions on locating and 
 The project won't work without these mods.
 
 Finally, a shout out to digitalarts for the guidance on setting up two of these in a single machine by incrementing the build.pid in the boards.txt file.
+<br>
+>  If you want to use more then one ledwiz clones, be sure they have different id's!<br>
+>  It's the .build.pid = 0x00F0<br>
+>  ;F0 is ID1, for the next ledwiz you need to set it to 0x00F1 so it's ID2.<br>
+>  If you have a pinscape additionaly, this already is fixed ID8<br>
 
-  If you want to use more then one ledwiz clones, be sure they have different id's!
-  It's the .build.pid = 0x00F0
-  ;F0 is ID1, for the next ledwiz you need to set it to 0x00F1 so it's ID2.
-  If you have a pinscape additionaly, this already is fixed ID8
+Thanks for being such an awesome community!

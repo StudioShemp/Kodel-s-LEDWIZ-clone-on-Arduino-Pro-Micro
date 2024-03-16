@@ -1,0 +1,37 @@
+################################################################################
+###################################### LedWIZ ##################################
+################################################################################
+############################ alterations by wouterrusman #######################
+
+####################### optionally add to the end of boards.txt ################
+#################### instead of altering the existing pro-micro ################
+################ definition as described in the ino file commentary ############
+
+
+LedWIZ.name=USB LED-Wiz Copy by Koen
+
+LedWIZ.upload.tool=arduino:avrdude
+LedWIZ.upload.protocol=avr109
+LedWIZ.upload.maximum_size=28672
+LedWIZ.upload.speed=57600
+LedWIZ.upload.disable_flushing=true
+LedWIZ.upload.use_1200bps_touch=true
+LedWIZ.upload.wait_for_upload_port=true
+
+LedWIZ.bootloader.tool=arduino:avrdude
+LedWIZ.bootloader.unlock_bits=0x3F
+LedWIZ.bootloader.lock_bits=0x2F
+LedWIZ.bootloader.low_fuses=0xFF
+LedWIZ.bootloader.high_fuses=0xD8
+
+LedWIZ.build.board=AVR_LEDWIZ
+LedWIZ.build.mcu=atmega32u4
+LedWIZ.build.f_cpu=16000000L
+LedWIZ.build.vid=0xFAFA
+LedWIZ.build.pid=0x00F0
+LedWIZ.build.usb_product="USB LED-Wiz Copy by Koen"
+LedWIZ.build.core=arduino:arduino
+LedWIZ.build.variant=promicro
+LedWIZ.build.extra_flags={build.usb_flags}
+LedWIZ.build.usb_manufacturer="SparkFun Electronics"
+LedWIZ.menu.cpu.16MHzatmega32U4.build.pid=0x00F0
